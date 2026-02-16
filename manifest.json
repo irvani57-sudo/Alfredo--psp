@@ -1,24 +1,22 @@
 {
-  "id": "Alfredo-psp",
-  "name": "Alfredo PSP",
-  "short_name": "Alfredo",
-  "description": "Alfredo PSP progressive web application",
-  "start_url": "index.html",
-  "scope": "./",
+  "name": "OmidePay",
+  "short_name": "OmidePay",
+  "start_url": ".",
   "display": "standalone",
-  "orientation": "any",
-  "background_color": "#ffffff",
-  "theme_color": "#1976d2",
+  "background_color": "#0f4c5c",
+  "theme_color": "#0f4c5c",
   "icons": [
     {
-      "src": "icons/icon-192.png?v=3",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-512.png?v=3",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
