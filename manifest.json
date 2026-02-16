@@ -3,19 +3,20 @@
   "name": "Alfredo PSP",
   "short_name": "Alfredo",
   "description": "Alfredo PSP progressive web application",
-  "start_url": "/Alfredo--psp/index.html",
-  "scope": "/Alfredo--psp/",
+  "start_url": "index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#1976d2",
   "icons": [
     {
-      "src": "/Alfredo--psp/icons/icon-192.png",
+      "src": "icons/icon-192.png?v=3",
       "sizes": "192x192",
       "type": "image/jpeg"
     },
     {
-      "src": "/Alfredo--psp/icons/icon-512.png",
+      "src": "icons/icon-512.png?v=3",
       "sizes": "512x512",
       "type": "image/jpeg"
     }
