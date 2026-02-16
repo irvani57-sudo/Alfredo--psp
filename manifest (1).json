@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Alfedo-psp",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Alfedo-psp",
+  "start_url": "/",
+  "theme_color": "#1976d2",
+  "id": "Alfedo-psp",
+  "description": "Alfredo psp"
+}
