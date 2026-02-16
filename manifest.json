@@ -6,19 +6,18 @@
   "start_url": "/Alfredo--psp/index.html",
   "scope": "/Alfredo--psp/",
   "display": "standalone",
-  "orientation": "any",
   "background_color": "#ffffff",
   "theme_color": "#1976d2",
   "icons": [
     {
       "src": "/Alfredo--psp/icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpeg"
     },
     {
       "src": "/Alfredo--psp/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ]
 }
