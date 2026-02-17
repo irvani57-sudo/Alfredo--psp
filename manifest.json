@@ -1,9 +1,9 @@
 {
-  "id": "Alfredo-psp",
-  "name": "Alfredo PSP",
-  "short_name": "Alfredo",
+  "id": "Alfredo-psp ",
+  "name": "Alfredo Psp OmidePay",
+  "short_name": "Alfredo Psp OmidePay",
   "description": "Alfredo PSP Progressive Web Application",
-  "start_url": "/Alfredo--psp/",
+  "start_url": "https://irvani57-sudo.github.io/Alfredo--psp/",
   "scope": "/Alfredo--psp/",
   "display": "standalone",
   "orientation": "any",
