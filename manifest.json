@@ -1,7 +1,7 @@
 {
   "name": "Alfredo Psp OmidePay",
-  "short_name": "Alfedo-psp",
-  "description": "Alfedo providers Psp Omidpay",
+  "short_name": "Alfredo Psp OmidePay",
+  "description": "Alfedo providers Psp Omidpay\n                    welcome",
   "start_url": ".https://irvani57-sudo.github.io/Alfredo--psp/",
   "display": "standalone",
   "background_color": "#0f4c5c",
@@ -20,5 +20,5 @@
       "purpose": "any maskable"
     }
   ],
-  "id": "Alfedo-psp"
+  "id": "Alfredo Psp OmidePay"
 }
