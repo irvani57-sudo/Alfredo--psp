@@ -2,27 +2,34 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>OmidePay</title>
 
-  <link rel="manifest" href="manifest.json?v=7">
+  <link rel="manifest" href="manifest.json?v=6">
+
   <meta name="theme-color" content="#1976d2">
 
   <script>
+    // ✅ Detect PWA (standalone)
     const isPWA =
       window.matchMedia('(display-mode: standalone)').matches ||
       window.navigator.standalone === true;
 
+    // ✅ Redirect ONLY inside PWA
     if (isPWA) {
-      location.replace(
+      window.location.replace(
         "https://script.google.com/macros/s/AKfycbyNWO3oMXW1gDDn3MWz7BwDNVBqhppe0IqpW5sqsOZeNnd7p8fJcPEGx4mpkTKFIKWojQ/exec"
       );
     }
   </script>
 </head>
 
-<body style="text-align:center;margin-top:40vh;font-family:sans-serif">
-  در حال ورود به OmidePay...
+<body>
+  <!-- ✅ Normal browser view -->
+  <p style="text-align:center;margin-top:40vh;font-family:sans-serif">
+    در حال ورود به برنامه...
+  </p>
 </body>
 </html>
