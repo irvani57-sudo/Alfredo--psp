@@ -1,29 +1,25 @@
 {
-  {
-  "background_color": "#d9e3e2",
+  "name": "Alfredo OmidePay",
+  "short_name": "Alfredo",
+  "description": "Alfredo providers PSP OmidePay",
   "dir": "ltr",
   "display": "standalone",
-  "name": "irvani57-sudo.github",
   "orientation": "any",
-  "scope": "/",
-  "short_name": "irvani57-sudo.github",
+  "background_color": "#d9e3e2",
+  "theme_color": "#d6e4e2",
+  "scope": "/Alfredo--psp/",
   "start_url": "https://irvani57-sudo.github.io/Alfredo--psp/",
-  "theme_color": "#d6e4e2"
-
-"icons": [
-{
-"src": "icons/icon-192.png",
-"sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+  "id": "/Alfredo--psp/",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
       "type": "image/png"
-},
-{
-"src": "icons/icon-512.png",
-@@ -20,5 +19,5 @@
-"purpose": "any maskable"
-}
-],
-  "id": "Alfredo-psp"
-  "id": "/Alfredo--psp/"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
