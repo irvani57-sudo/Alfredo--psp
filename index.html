@@ -2,66 +2,34 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Alfredo PSP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ✅ Manifest -->
-  <link rel="manifest" href="manifest.json?v=4">
+  <title>OmidePay</title>
 
-  <!-- ✅ Theme colors -->
+  <link rel="manifest" href="manifest.json?v=6">
+
   <meta name="theme-color" content="#1976d2">
-  <meta name="background-color" content="#ffffff">
 
-  <!-- ✅ PWA meta -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Alfredo PSP">
+  <script>
+    // ✅ Detect PWA (standalone)
+    const isPWA =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true;
 
-  <!-- ✅ Icons -->
-  <link rel="icon" href="icons/icon-192.png">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #ffffff;
+    // ✅ Redirect ONLY inside PWA
+    if (isPWA) {
+      window.location.replace(
+        "https://script.google.com/macros/s/AKfycbyNWO3oMXW1gDDn3MWz7BwDNVBqhppe0IqpW5sqsOZeNnd7p8fJcPEGx4mpkTKFIKWojQ/exec"
+      );
     }
-   iframe {
-  border: none;
-  width: 100vw;
-  height: 100vh;
-  zoom: 1;
-}
-
-  </style>
+  </script>
 </head>
 
 <body>
-
-  <!-- ✅ Load NEW Google Apps Script inside GitHub Pages -->
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbyNWO3oMXW1gDDn3MWz7BwDNVBqhppe0IqpW5sqsOZeNnd7p8fJcPEGx4mpkTKFIKWojQ/exec"
-    allow="fullscreen">
-  </iframe>
-
-  <!-- ✅ Service Worker (fixed ✅) -->
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("service-worker.js")
-          .then(() => console.log("✅ Service Worker Registered"))
-          .catch(err => console.log("❌ SW failed:", err));
-      });
-    }
-  </script>
-
+  <!-- ✅ Normal browser view -->
+  <p style="text-align:center;margin-top:40vh;font-family:sans-serif">
+    در حال ورود به برنامه...
+  </p>
 </body>
 </html>
-
