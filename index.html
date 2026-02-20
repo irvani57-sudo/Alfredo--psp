@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>در حال انتقال...</title>
-    <!-- این خط پایین همون جادوییه که کاربر رو می‌فرسته به مقصد -->
-    <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#bdd8e1">
+
     <style>
-        body { font-family: Tahoma, sans-serif; text-align: center; padding-top: 50px; background-color: #f4f4f4; }
-        .loader { border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 2s linear infinite; margin: 0 auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        body {
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f4;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.5s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
+
     <div class="loader"></div>
     <p>کمی صبر کن، داریم می‌بریمت به مقصد...</p>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js");
+        }
+
+        setTimeout(() => {
+            window.location.href =
+            "https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec";
+        }, 800);
+    </script>
+
 </body>
 </html>
