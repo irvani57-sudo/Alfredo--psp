@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>در حال انتقال...</title>
 
+    <!-- PWA essentials -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#bdd8e1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- iOS support (بی‌ضرر، ولی مفید) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <style>
         body {
@@ -13,6 +19,7 @@
             text-align: center;
             padding-top: 50px;
             background-color: #f4f4f4;
+            margin: 0;
         }
         .loader {
             border: 8px solid #f3f3f3;
@@ -27,6 +34,11 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -35,13 +47,16 @@
     <p>کمی صبر کن، داریم می‌بریمت به مقصد...</p>
 
     <script>
+        // Register Service Worker (برای PWABuilder و Android)
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("sw.js");
         }
 
-        setTimeout(() => {
-            window.location.href =
-            "https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec";
+        // Redirect after short delay
+        setTimeout(function () {
+            window.location.replace(
+              "https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec"
+            );
         }, 800);
     </script>
 
