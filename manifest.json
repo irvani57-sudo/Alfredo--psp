@@ -1,13 +1,15 @@
 {
-"name": "Alfredo Psp OmidePay",
-"short_name": "Alfredo-psp",
-  "description": "Alfedo providers Psp Omidpay\n               welcome 🤗",
-  "start_url": ".https://irvani57-sudo.github.io/Alfredo--psp/",
-  "description": "Alfedo providers Psp Omidpay – welcome 🤗",
-  "start_url": "/Alfredo--psp/",
-"display": "standalone",
-"background_color": "#a7cfc8",
-"theme_color": "#91bbcc",
+  {
+  "background_color": "#d9e3e2",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "irvani57-sudo.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "irvani57-sudo.github",
+  "start_url": "https://irvani57-sudo.github.io/Alfredo--psp/",
+  "theme_color": "#d6e4e2"
+
 "icons": [
 {
 "src": "icons/icon-192.png",
