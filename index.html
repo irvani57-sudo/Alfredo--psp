@@ -3,20 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Alfredo OmidePay</title>
 
+  <!-- اتصال به مانیفست (پل ارتباطی اصلی) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#d6e4e2">
+
+  <!-- ریدایرکت فوری (همون که می‌خواستی) -->
   <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec">
 
   <script>
-    // Backup redirect (اگه مرورگر لج کرد 😤)
+    // ثبت سرویس‌ورکر برای اینکه گوشی بفهمه این یه اپلیکیشنه
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+
+    // بک‌آپ ریدایرکت
     window.location.replace(
       "https://script.google.com/macros/s/AKfycbzqSd4XvTwAQpbDPhX3j42BKQwC0VL1Z-UOT5e55CBy_Il0W_Lus1Xa4zzq4QZiJTXCPg/exec"
     );
   </script>
 </head>
-
-<body style="text-align:center;font-family:sans-serif;margin-top:40vh">
+<body style="text-align:center;font-family:sans-serif;margin-top:40vh;background-color:#d9e3e2;">
   <p>در حال انتقال به OmidePay ⏳</p>
 </body>
 </html>
