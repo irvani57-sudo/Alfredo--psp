@@ -1,26 +1,27 @@
 {
   "name": "Alfredo Psp OmidePay",
-  "short_name": "Alfredo Psp",
-  "description": "Alfredo Omidpay Psp",
-  "start_url": "https://irvani57-sudo.github.io/Alfredo--psp/",
+  "short_name": "Alfredo",
+  "description": "Alfredo Omidpay",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "/Alfredo--psp/",
   "scope": "/Alfredo--psp/",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#c9dbdf",
   "theme_color": "#bdd8e1",
-  "dir": "rtl",
-  "lang": "fa",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
-  ],
-  "id": "Alfredo Psp OmidePay"
+  ]
 }
